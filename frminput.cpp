@@ -753,6 +753,35 @@ void frmInput::clearChinese()
     currentPY_count = 0;
 }
 
+void frmInput::on_btnStyle_clicked()
+{
+    if (currentStyle == "blue") {
+        currentStyle="dev";
+
+    } else if (currentStyle == "dev") {
+        currentStyle="gray";
+
+    } else if (currentStyle == "gray") {
+        currentStyle="lightgray";
+
+    } else if (currentStyle == "lightgray") {
+        currentStyle="darkgray";
+
+    } else if (currentStyle == "darkgray") {
+        currentStyle="black";
+
+    } else if (currentStyle == "black") {
+        currentStyle="brown";
+
+    } else if (currentStyle == "brown") {
+        currentStyle="silvery";
+
+    } else if (currentStyle == "silvery") {
+        currentStyle="blue";
+    }
+    ChangeStyle();
+}
+
 //改变样式
 void frmInput::ChangeStyle()
 {
@@ -821,4 +850,5 @@ void frmInput::ChangeFont()
     ui->btnNext->setFont(labFont);
     ui->btnClose->setFont(labFont);
 }
+
 

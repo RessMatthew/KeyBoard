@@ -33,11 +33,12 @@ public:
     QWidget *widgetTop;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *lay1;
+    QPushButton *btnClose;
     QLabel *lab_Title;
     QLabel *labPY;
     QPushButton *btnPre;
     QPushButton *btnNext;
-    QPushButton *btnClose;
+    QPushButton *btnStyle;
     QHBoxLayout *lay2;
     QLabel *labCh0;
     QLabel *labCh1;
@@ -158,6 +159,13 @@ public:
         lay1 = new QHBoxLayout();
         lay1->setSpacing(2);
         lay1->setObjectName(QStringLiteral("lay1"));
+        btnClose = new QPushButton(widgetTop);
+        btnClose->setObjectName(QStringLiteral("btnClose"));
+        btnClose->setFocusPolicy(Qt::NoFocus);
+        btnClose->setStyleSheet(QStringLiteral(""));
+
+        lay1->addWidget(btnClose);
+
         lab_Title = new QLabel(widgetTop);
         lab_Title->setObjectName(QStringLiteral("lab_Title"));
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Minimum);
@@ -194,12 +202,12 @@ public:
 
         lay1->addWidget(btnNext);
 
-        btnClose = new QPushButton(widgetTop);
-        btnClose->setObjectName(QStringLiteral("btnClose"));
-        btnClose->setFocusPolicy(Qt::NoFocus);
-        btnClose->setStyleSheet(QStringLiteral(""));
+        btnStyle = new QPushButton(widgetTop);
+        btnStyle->setObjectName(QStringLiteral("btnStyle"));
+        btnStyle->setFocusPolicy(Qt::NoFocus);
+        btnStyle->setStyleSheet(QStringLiteral(""));
 
-        lay1->addWidget(btnClose);
+        lay1->addWidget(btnStyle);
 
 
         verticalLayout->addLayout(lay1);
@@ -943,11 +951,12 @@ public:
     void retranslateUi(QWidget *frmInput)
     {
         frmInput->setWindowTitle(QApplication::translate("frmInput", "\344\270\255\346\226\207\350\276\223\345\205\245\346\263\225\351\235\242\346\235\277", Q_NULLPTR));
+        btnClose->setText(QApplication::translate("frmInput", "ESC", Q_NULLPTR));
         lab_Title->setText(QApplication::translate("frmInput", "  \344\270\255\346\226\207\350\276\223\345\205\245\346\263\225--\345\260\217\345\206\231", Q_NULLPTR));
         labPY->setText(QString());
         btnPre->setText(QApplication::translate("frmInput", "<", Q_NULLPTR));
         btnNext->setText(QApplication::translate("frmInput", ">", Q_NULLPTR));
-        btnClose->setText(QApplication::translate("frmInput", "\345\205\263\351\227\255", Q_NULLPTR));
+        btnStyle->setText(QApplication::translate("frmInput", "Style", Q_NULLPTR));
         labCh0->setText(QString());
         labCh1->setText(QString());
         labCh2->setText(QString());

@@ -1076,7 +1076,8 @@ temp/obj/main.o: main.cpp frmmain.h \
 		E:/QT/5.9.1/mingw53_32/include/QtCore/QTimer \
 		E:/QT/5.9.1/mingw53_32/include/QtGui/QShowEvent \
 		E:/QT/5.9.1/mingw53_32/include/QtCore/QMutexLocker \
-		frmnum.h
+		frmnum.h \
+		inputform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o temp\obj\main.o main.cpp
 
 temp/obj/frmmain.o: frmmain.cpp frmmain.h \
@@ -1835,7 +1836,46 @@ temp/obj/inputform.o: inputform.cpp inputform.h \
 		E:/QT/5.9.1/mingw53_32/include/QtCore/qfiledevice.h \
 		E:/QT/5.9.1/mingw53_32/include/QtGui/qvector2d.h \
 		E:/QT/5.9.1/mingw53_32/include/QtGui/qtouchdevice.h \
-		temp/ui/ui_inputform.h
+		temp/ui/ui_inputform.h \
+		E:/QT/5.9.1/mingw53_32/include/QtCore/QVariant \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/QAction \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qaction.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qicon.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/QApplication \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/QT/5.9.1/mingw53_32/include/QtCore/qcoreapplication.h \
+		E:/QT/5.9.1/mingw53_32/include/QtCore/qeventloop.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qinputmethod.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/QButtonGroup \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qbuttongroup.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/QHeaderView \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qheaderview.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qframe.h \
+		E:/QT/5.9.1/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		E:/QT/5.9.1/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qstyleoption.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qvalidator.h \
+		E:/QT/5.9.1/mingw53_32/include/QtCore/qregularexpression.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qslider.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qabstractslider.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qstyle.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qtabbar.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qrubberband.h \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/QTextEdit \
+		E:/QT/5.9.1/mingw53_32/include/QtWidgets/qtextedit.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qtextdocument.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qtextoption.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qtextcursor.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qtextformat.h \
+		E:/QT/5.9.1/mingw53_32/include/QtGui/qpen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o temp\obj\inputform.o inputform.cpp
 
 temp/obj/moc_frmmain.o: temp/moc/moc_frmmain.cpp 

@@ -68,6 +68,19 @@
             <number>2</number>
            </property>
            <item>
+            <widget class="QPushButton" name="btnClose">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>ESC</string>
+             </property>
+            </widget>
+           </item>
+           <item>
             <widget class="QLabel" name="lab_Title">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
@@ -129,7 +142,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="btnClose">
+            <widget class="QPushButton" name="btnStyle">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
@@ -137,7 +150,7 @@
               <string notr="true"/>
              </property>
              <property name="text">
-              <string>关闭</string>
+              <string>Style</string>
              </property>
             </widget>
            </item>
