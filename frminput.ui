@@ -142,6 +142,19 @@
             </widget>
            </item>
            <item>
+            <widget class="QPushButton" name="btnStyle_2">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Add</string>
+             </property>
+            </widget>
+           </item>
+           <item>
             <widget class="QPushButton" name="btnStyle">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>

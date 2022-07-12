@@ -16,17 +16,20 @@ SOURCES += main.cpp\
         frmmain.cpp \
     frminput.cpp \
     frmnum.cpp\
-    inputform.cpp
+    inputform.cpp \
+    adddatabase.cpp
 
 HEADERS  += frmmain.h \
     frminput.h \
     frmnum.h\
-    inputform.h
+    inputform.h \
+    adddatabase.h
 
 FORMS    += frmmain.ui \
     frmnum.ui \
     frminput.ui\
-    inputform.ui
+    inputform.ui \
+    adddatabase.ui
 
 MOC_DIR         = temp/moc
 RCC_DIR         = temp/rcc

@@ -38,6 +38,7 @@ public:
     QLabel *labPY;
     QPushButton *btnPre;
     QPushButton *btnNext;
+    QPushButton *btnStyle_2;
     QPushButton *btnStyle;
     QHBoxLayout *lay2;
     QLabel *labCh0;
@@ -201,6 +202,13 @@ public:
         btnNext->setStyleSheet(QStringLiteral(""));
 
         lay1->addWidget(btnNext);
+
+        btnStyle_2 = new QPushButton(widgetTop);
+        btnStyle_2->setObjectName(QStringLiteral("btnStyle_2"));
+        btnStyle_2->setFocusPolicy(Qt::NoFocus);
+        btnStyle_2->setStyleSheet(QStringLiteral(""));
+
+        lay1->addWidget(btnStyle_2);
 
         btnStyle = new QPushButton(widgetTop);
         btnStyle->setObjectName(QStringLiteral("btnStyle"));
@@ -956,6 +964,7 @@ public:
         labPY->setText(QString());
         btnPre->setText(QApplication::translate("frmInput", "<", Q_NULLPTR));
         btnNext->setText(QApplication::translate("frmInput", ">", Q_NULLPTR));
+        btnStyle_2->setText(QApplication::translate("frmInput", "Add", Q_NULLPTR));
         btnStyle->setText(QApplication::translate("frmInput", "Style", Q_NULLPTR));
         labCh0->setText(QString());
         labCh1->setText(QString());

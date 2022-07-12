@@ -14,6 +14,7 @@
 #include <QTimer>
 #include <QShowEvent>
 #include <QMutexLocker>
+#include "adddatabase.h"
 
 namespace Ui
 {
@@ -66,6 +67,8 @@ private slots:
 
     void on_btnStyle_clicked();
 
+    void on_btnStyle_2_clicked();
+
 private:
     Ui::frmInput *ui;
     static frmInput *_instance;     //实例对象
@@ -117,6 +120,7 @@ private:
     void showChinese();             //显示查询到的汉字
     void setChinese(int index);     //设置当前汉字
     void clearChinese();            //清空当前汉字信息
+    addDataBase *view;              //创建添加数据库框指针
 
 };
 

@@ -1,6 +1,7 @@
 #include "frminput.h"
 #include "ui_frminput.h"
 #include "qdesktopwidget.h"
+#include "adddatabase.h"
 
 frmInput *frmInput::_instance = 0;
 frmInput::frmInput(QWidget *parent) :
@@ -852,3 +853,9 @@ void frmInput::ChangeFont()
 }
 
 
+//弹出添加数据库对话框
+void frmInput::on_btnStyle_2_clicked()
+{
+    view = new addDataBase(this) ;//将类指针实例化
+    view->show();
+}
