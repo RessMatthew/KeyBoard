@@ -15,15 +15,18 @@ TEMPLATE = app
 SOURCES += main.cpp\
         frmmain.cpp \
     frminput.cpp \
-    frmnum.cpp
+    frmnum.cpp\
+    inputform.cpp
 
 HEADERS  += frmmain.h \
     frminput.h \
-    frmnum.h
+    frmnum.h\
+    inputform.h
 
 FORMS    += frmmain.ui \
     frmnum.ui \
-    frminput.ui
+    frminput.ui\
+    inputform.ui
 
 MOC_DIR         = temp/moc
 RCC_DIR         = temp/rcc
