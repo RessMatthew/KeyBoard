@@ -5,9 +5,15 @@ INPUT(
 ./temp\obj\frmnum.o
 ./temp\obj\inputform.o
 ./temp\obj\adddatabase.o
+./temp\obj\audio.o
+./temp\obj\speech.o
+./temp\obj\http.o
 ./temp\obj\moc_frmmain.o
 ./temp\obj\moc_frminput.o
 ./temp\obj\moc_frmnum.o
 ./temp\obj\moc_inputform.o
 ./temp\obj\moc_adddatabase.o
+./temp\obj\moc_audio.o
+./temp\obj\moc_speech.o
+./temp\obj\moc_http.o
 );

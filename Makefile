@@ -235,9 +235,11 @@ Makefile: InputTool.pro E:/QT/5.9.1/mingw53_32/mkspecs/win32-g++/qmake.conf E:/Q
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/lex.prf \
 		InputTool.pro \
 		E:/QT/5.9.1/mingw53_32/lib/qtmaind.prl \
+		E:/QT/5.9.1/mingw53_32/lib/Qt5Multimedia.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Widgets.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Gui.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Sql.prl \
+		E:/QT/5.9.1/mingw53_32/lib/Qt5Network.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile InputTool.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 E:/QT/5.9.1/mingw53_32/mkspecs/features/spec_pre.prf:
@@ -414,9 +416,11 @@ E:/QT/5.9.1/mingw53_32/mkspecs/features/yacc.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/lex.prf:
 InputTool.pro:
 E:/QT/5.9.1/mingw53_32/lib/qtmaind.prl:
+E:/QT/5.9.1/mingw53_32/lib/Qt5Multimedia.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Widgets.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Gui.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Sql.prl:
+E:/QT/5.9.1/mingw53_32/lib/Qt5Network.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile InputTool.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

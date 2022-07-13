@@ -87,18 +87,16 @@ public:
     QPushButton *btnType;
     QPushButton *btnOther17;
     QPushButton *btn9;
-    QPushButton *btn0;
     QPushButton *btnDot;
     QPushButton *btn6;
     QPushButton *btnOther13;
-    QPushButton *btn00;
     QPushButton *btn3;
     QPushButton *btnz_alt_2;
     QPushButton *btnz_ctrl;
     QPushButton *btnz_ctrl_3;
     QPushButton *btnz_alt_3;
     QPushButton *btnz_win;
-    QPushButton *btnz_shift;
+    QPushButton *SPEECHpushButton;
     QPushButton *btn4;
     QPushButton *btn5;
     QPushButton *btn8;
@@ -130,6 +128,7 @@ public:
     QPushButton *btnOther8_3;
     QPushButton *btnOther12;
     QPushButton *btnOther12_3;
+    QPushButton *btn0;
 
     void setupUi(QWidget *frmInput)
     {
@@ -606,14 +605,6 @@ public:
 
         gridLayout->addWidget(btn9, 1, 18, 1, 1);
 
-        btn0 = new QPushButton(widgetMain);
-        btn0->setObjectName(QStringLiteral("btn0"));
-        sizePolicy4.setHeightForWidth(btn0->sizePolicy().hasHeightForWidth());
-        btn0->setSizePolicy(sizePolicy4);
-        btn0->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btn0, 4, 16, 1, 1);
-
         btnDot = new QPushButton(widgetMain);
         btnDot->setObjectName(QStringLiteral("btnDot"));
         sizePolicy4.setHeightForWidth(btnDot->sizePolicy().hasHeightForWidth());
@@ -637,14 +628,6 @@ public:
         btnOther13->setFocusPolicy(Qt::NoFocus);
 
         gridLayout->addWidget(btnOther13, 1, 13, 1, 2);
-
-        btn00 = new QPushButton(widgetMain);
-        btn00->setObjectName(QStringLiteral("btn00"));
-        sizePolicy4.setHeightForWidth(btn00->sizePolicy().hasHeightForWidth());
-        btn00->setSizePolicy(sizePolicy4);
-        btn00->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btn00, 4, 17, 1, 1);
 
         btn3 = new QPushButton(widgetMain);
         btn3->setObjectName(QStringLiteral("btn3"));
@@ -694,13 +677,13 @@ public:
 
         gridLayout->addWidget(btnz_win, 4, 2, 1, 1);
 
-        btnz_shift = new QPushButton(widgetMain);
-        btnz_shift->setObjectName(QStringLiteral("btnz_shift"));
-        sizePolicy4.setHeightForWidth(btnz_shift->sizePolicy().hasHeightForWidth());
-        btnz_shift->setSizePolicy(sizePolicy4);
-        btnz_shift->setFocusPolicy(Qt::NoFocus);
+        SPEECHpushButton = new QPushButton(widgetMain);
+        SPEECHpushButton->setObjectName(QStringLiteral("SPEECHpushButton"));
+        sizePolicy4.setHeightForWidth(SPEECHpushButton->sizePolicy().hasHeightForWidth());
+        SPEECHpushButton->setSizePolicy(sizePolicy4);
+        SPEECHpushButton->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnz_shift, 3, 0, 1, 3);
+        gridLayout->addWidget(SPEECHpushButton, 3, 0, 1, 3);
 
         btn4 = new QPushButton(widgetMain);
         btn4->setObjectName(QStringLiteral("btn4"));
@@ -944,6 +927,14 @@ public:
 
         gridLayout->addWidget(btnOther12_3, 0, 17, 1, 1);
 
+        btn0 = new QPushButton(widgetMain);
+        btn0->setObjectName(QStringLiteral("btn0"));
+        sizePolicy4.setHeightForWidth(btn0->sizePolicy().hasHeightForWidth());
+        btn0->setSizePolicy(sizePolicy4);
+        btn0->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btn0, 4, 16, 1, 2);
+
 
         verticalLayout_3->addWidget(widgetMain);
 
@@ -964,7 +955,7 @@ public:
         labPY->setText(QString());
         btnPre->setText(QApplication::translate("frmInput", "<", Q_NULLPTR));
         btnNext->setText(QApplication::translate("frmInput", ">", Q_NULLPTR));
-        btnStyle_2->setText(QApplication::translate("frmInput", "Add", Q_NULLPTR));
+        btnStyle_2->setText(QApplication::translate("frmInput", "DataBase", Q_NULLPTR));
         btnStyle->setText(QApplication::translate("frmInput", "Style", Q_NULLPTR));
         labCh0->setText(QString());
         labCh1->setText(QString());
@@ -1010,18 +1001,16 @@ public:
         btnType->setText(QApplication::translate("frmInput", "\345\260\217\345\206\231", Q_NULLPTR));
         btnOther17->setText(QApplication::translate("frmInput", ",", Q_NULLPTR));
         btn9->setText(QApplication::translate("frmInput", "9", Q_NULLPTR));
-        btn0->setText(QApplication::translate("frmInput", "0", Q_NULLPTR));
         btnDot->setText(QApplication::translate("frmInput", ".", Q_NULLPTR));
         btn6->setText(QApplication::translate("frmInput", "6", Q_NULLPTR));
         btnOther13->setText(QApplication::translate("frmInput", "|", Q_NULLPTR));
-        btn00->setText(QApplication::translate("frmInput", "00", Q_NULLPTR));
         btn3->setText(QApplication::translate("frmInput", "3", Q_NULLPTR));
         btnz_alt_2->setText(QApplication::translate("frmInput", "alt", Q_NULLPTR));
         btnz_ctrl->setText(QApplication::translate("frmInput", "ctrl", Q_NULLPTR));
         btnz_ctrl_3->setText(QApplication::translate("frmInput", "tab", Q_NULLPTR));
         btnz_alt_3->setText(QApplication::translate("frmInput", "fn", Q_NULLPTR));
         btnz_win->setText(QApplication::translate("frmInput", "win", Q_NULLPTR));
-        btnz_shift->setText(QApplication::translate("frmInput", "shfit", Q_NULLPTR));
+        SPEECHpushButton->setText(QApplication::translate("frmInput", "\346\214\211\344\275\217\350\257\264\350\257\235", Q_NULLPTR));
         btn4->setText(QApplication::translate("frmInput", "4", Q_NULLPTR));
         btn5->setText(QApplication::translate("frmInput", "5", Q_NULLPTR));
         btn8->setText(QApplication::translate("frmInput", "8", Q_NULLPTR));
@@ -1051,6 +1040,7 @@ public:
         btnOther8_3->setText(QApplication::translate("frmInput", "*", Q_NULLPTR));
         btnOther12->setText(QApplication::translate("frmInput", "/", Q_NULLPTR));
         btnOther12_3->setText(QApplication::translate("frmInput", "/", Q_NULLPTR));
+        btn0->setText(QApplication::translate("frmInput", "0", Q_NULLPTR));
     } // retranslateUi
 
 };

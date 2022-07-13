@@ -4,8 +4,9 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
-
+QT       += core gui sql network
+#语言输入所需模块
+QT       += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = InputTool
@@ -17,13 +18,19 @@ SOURCES += main.cpp\
     frminput.cpp \
     frmnum.cpp\
     inputform.cpp \
-    adddatabase.cpp
+    adddatabase.cpp\
+    audio.cpp\
+    speech.cpp\
+    http.cpp
 
 HEADERS  += frmmain.h \
     frminput.h \
     frmnum.h\
     inputform.h \
-    adddatabase.h
+    adddatabase.h\
+    audio.h\
+    speech.h\
+    http.h
 
 FORMS    += frmmain.ui \
     frmnum.ui \

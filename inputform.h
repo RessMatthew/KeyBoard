@@ -3,6 +3,7 @@
 
 #include <QWidget>
 
+
 namespace Ui {
 class inputForm;
 }
@@ -17,6 +18,7 @@ public:
 
 private:
     Ui::inputForm *ui;
+
 };
 
 #endif // INPUTFORM_H

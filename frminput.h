@@ -15,6 +15,7 @@
 #include <QShowEvent>
 #include <QMutexLocker>
 #include "adddatabase.h"
+#include <audio.h>
 
 namespace Ui
 {
@@ -69,6 +70,10 @@ private slots:
 
     void on_btnStyle_2_clicked();
 
+    void on_SPEECHpushButton_pressed();
+
+    void on_SPEECHpushButton_released();
+
 private:
     Ui::frmInput *ui;
     static frmInput *_instance;     //实例对象
@@ -121,7 +126,7 @@ private:
     void setChinese(int index);     //设置当前汉字
     void clearChinese();            //清空当前汉字信息
     addDataBase *view;              //创建添加数据库框指针
-
+    audio *Audio;                   //指向Audio类
 };
 
 #endif // FRMINPUT_H

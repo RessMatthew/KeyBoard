@@ -2,12 +2,14 @@
 #include "ui_frminput.h"
 #include "qdesktopwidget.h"
 #include "adddatabase.h"
+#include <QDebug>
 
 frmInput *frmInput::_instance = 0;
 frmInput::frmInput(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::frmInput)
 {
+    Audio = new audio(this);
     ui->setupUi(this);
     this->InitProperty();//初始化属性
     this->InitForm();//初始化窗体数据
@@ -158,7 +160,7 @@ void frmInput::InitProperty()
     ui->btn7->setProperty("btnNum", true);
     ui->btn8->setProperty("btnNum", true);
     ui->btn9->setProperty("btnNum", true);
-    ui->btn00->setProperty("btnNum", true);
+//    ui->btn00->setProperty("btnNum", true);
 
     //字母
     ui->btna->setProperty("btnLetter", true);
@@ -858,4 +860,30 @@ void frmInput::on_btnStyle_2_clicked()
 {
     view = new addDataBase(this) ;//将类指针实例化
     view->show();
+}
+
+//开始录音
+void frmInput::on_SPEECHpushButton_pressed()
+{
+    ui->SPEECHpushButton->setText("松开识别");
+
+    /*开始录音*/
+    Audio->startAudio("audiofile");
+}
+
+//识别录音
+void frmInput::on_SPEECHpushButton_released()
+{
+    ui->SPEECHpushButton->setText("按住说话");
+    /*停止录音*/
+    Audio->stopAudio();
+
+    /*启动识别*/
+    QString retStr = Audio->startSpeech();
+    qDebug()<<retStr;
+
+    allPY.append(retStr);
+    currentPY_count++;
+    showChinese();
+    //ui->lineEdit->setText(retStr);
 }
