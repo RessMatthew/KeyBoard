@@ -29,6 +29,8 @@ public:
     QTextEdit *textWord;
     QLabel *label;
     QLabel *label_2;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
 
     void setupUi(QWidget *addDataBase)
     {
@@ -37,7 +39,7 @@ public:
         addDataBase->resize(567, 86);
         pushButton = new QPushButton(addDataBase);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(350, 40, 191, 28));
+        pushButton->setGeometry(QRect(350, 40, 61, 28));
         textPinyin = new QTextEdit(addDataBase);
         textPinyin->setObjectName(QStringLiteral("textPinyin"));
         textPinyin->setGeometry(QRect(70, 40, 111, 31));
@@ -50,6 +52,12 @@ public:
         label_2 = new QLabel(addDataBase);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(190, 50, 31, 16));
+        pushButton_2 = new QPushButton(addDataBase);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(420, 40, 61, 28));
+        pushButton_3 = new QPushButton(addDataBase);
+        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        pushButton_3->setGeometry(QRect(490, 40, 61, 28));
 
         retranslateUi(addDataBase);
 
@@ -59,9 +67,11 @@ public:
     void retranslateUi(QWidget *addDataBase)
     {
         addDataBase->setWindowTitle(QApplication::translate("addDataBase", "Form", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("addDataBase", "Add Custom Dictionary", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("addDataBase", "Add", Q_NULLPTR));
         label->setText(QApplication::translate("addDataBase", "pinyin", Q_NULLPTR));
         label_2->setText(QApplication::translate("addDataBase", "word", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("addDataBase", "Del", Q_NULLPTR));
+        pushButton_3->setText(QApplication::translate("addDataBase", "Quit", Q_NULLPTR));
     } // retranslateUi
 
 };
