@@ -4,6 +4,8 @@
 #include "adddatabase.h"
 #include <QDebug>
 
+//QString chinese = "你好。";
+
 frmInput *frmInput::_instance = 0;
 frmInput::frmInput(QWidget *parent) :
     QWidget(parent),
@@ -880,10 +882,28 @@ void frmInput::on_SPEECHpushButton_released()
 
     /*启动识别*/
     QString retStr = Audio->startSpeech();
-    qDebug()<<retStr;
+    qDebug()<<"识别语音为 :"<<retStr;
 
     allPY.append(retStr);
     currentPY_count++;
     showChinese();
-    //ui->lineEdit->setText(retStr);
 }
+
+//开启手写
+void frmInput::on_pushHand_clicked()
+{
+    dlgMain = new DlgMain(this) ;//将类指针实例化
+    connect(dlgMain,SIGNAL(sendData(QString)),this,SLOT(receiveData(QString)));
+    dlgMain->setModal(false);
+    dlgMain->show();
+}
+
+void frmInput::receiveData(QString data){
+  qDebug()<<"手写输入为 :"<<data;
+  allPY.append(data);
+  currentPY_count++;
+
+  showChinese();
+}
+
+

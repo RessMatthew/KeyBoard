@@ -16,6 +16,7 @@
 #include <QMutexLocker>
 #include "adddatabase.h"
 #include <audio.h>
+#include "DlgMain.h"
 
 namespace Ui
 {
@@ -44,7 +45,6 @@ public:
 
     //初始化面板状态,包括字体大小
     void Init(QString position, QString style, int btnFontSize, int labFontSize);
-
 protected:
     //事件过滤器,处理鼠标在汉字标签处单击操作
     bool eventFilter(QObject *obj, QEvent *event);
@@ -73,6 +73,13 @@ private slots:
     void on_SPEECHpushButton_pressed();
 
     void on_SPEECHpushButton_released();
+
+
+private slots://槽
+    void receiveData(QString data);
+    void on_pushHand_clicked();
+
+
 
 private:
     Ui::frmInput *ui;
@@ -127,6 +134,7 @@ private:
     void clearChinese();            //清空当前汉字信息
     addDataBase *view;              //创建添加数据库框指针
     audio *Audio;                   //指向Audio类
+    DlgMain *dlgMain;
 };
 
 #endif // FRMINPUT_H

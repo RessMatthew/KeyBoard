@@ -8,6 +8,8 @@ INPUT(
 ./temp\obj\audio.o
 ./temp\obj\speech.o
 ./temp\obj\http.o
+./temp\obj\DlgMain.o
+./temp\obj\handsinput.o
 ./temp\obj\moc_frmmain.o
 ./temp\obj\moc_frminput.o
 ./temp\obj\moc_frmnum.o
@@ -16,4 +18,6 @@ INPUT(
 ./temp\obj\moc_audio.o
 ./temp\obj\moc_speech.o
 ./temp\obj\moc_http.o
+./temp\obj\moc_DlgMain.o
+./temp\obj\moc_handsinput.o
 );

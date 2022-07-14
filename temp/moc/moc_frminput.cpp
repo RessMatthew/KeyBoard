@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_frmInput_t {
-    QByteArrayData data[17];
-    char stringdata0[228];
+    QByteArrayData data[20];
+    char stringdata0[265];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -47,7 +47,10 @@ QT_MOC_LITERAL(12, 119, 9), // "reClicked"
 QT_MOC_LITERAL(13, 129, 19), // "on_btnStyle_clicked"
 QT_MOC_LITERAL(14, 149, 21), // "on_btnStyle_2_clicked"
 QT_MOC_LITERAL(15, 171, 27), // "on_SPEECHpushButton_pressed"
-QT_MOC_LITERAL(16, 199, 28) // "on_SPEECHpushButton_released"
+QT_MOC_LITERAL(16, 199, 28), // "on_SPEECHpushButton_released"
+QT_MOC_LITERAL(17, 228, 11), // "receiveData"
+QT_MOC_LITERAL(18, 240, 4), // "data"
+QT_MOC_LITERAL(19, 245, 19) // "on_pushHand_clicked"
 
     },
     "frmInput\0focusChanged\0\0QWidget*\0"
@@ -56,7 +59,8 @@ QT_MOC_LITERAL(16, 199, 28) // "on_SPEECHpushButton_released"
     "borderColor\0textColor\0reClicked\0"
     "on_btnStyle_clicked\0on_btnStyle_2_clicked\0"
     "on_SPEECHpushButton_pressed\0"
-    "on_SPEECHpushButton_released"
+    "on_SPEECHpushButton_released\0receiveData\0"
+    "data\0on_pushHand_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +70,7 @@ static const uint qt_meta_data_frmInput[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -74,14 +78,16 @@ static const uint qt_meta_data_frmInput[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    2,   54,    2, 0x08 /* Private */,
-       6,    0,   59,    2, 0x08 /* Private */,
-       7,    4,   60,    2, 0x08 /* Private */,
-      12,    0,   69,    2, 0x08 /* Private */,
-      13,    0,   70,    2, 0x08 /* Private */,
-      14,    0,   71,    2, 0x08 /* Private */,
-      15,    0,   72,    2, 0x08 /* Private */,
-      16,    0,   73,    2, 0x08 /* Private */,
+       1,    2,   64,    2, 0x08 /* Private */,
+       6,    0,   69,    2, 0x08 /* Private */,
+       7,    4,   70,    2, 0x08 /* Private */,
+      12,    0,   79,    2, 0x08 /* Private */,
+      13,    0,   80,    2, 0x08 /* Private */,
+      14,    0,   81,    2, 0x08 /* Private */,
+      15,    0,   82,    2, 0x08 /* Private */,
+      16,    0,   83,    2, 0x08 /* Private */,
+      17,    1,   84,    2, 0x08 /* Private */,
+      19,    0,   87,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3, 0x80000000 | 3,    4,    5,
@@ -91,6 +97,8 @@ static const uint qt_meta_data_frmInput[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   18,
     QMetaType::Void,
 
        0        // eod
@@ -110,6 +118,8 @@ void frmInput::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 5: _t->on_btnStyle_2_clicked(); break;
         case 6: _t->on_SPEECHpushButton_pressed(); break;
         case 7: _t->on_SPEECHpushButton_released(); break;
+        case 8: _t->receiveData((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 9: _t->on_pushHand_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -152,13 +162,13 @@ int frmInput::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 10;
     }
     return _id;
 }

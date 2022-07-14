@@ -5,6 +5,7 @@
 #include "frminput.h"
 #include "frmnum.h"
 #include "inputform.h"
+#include "DlgMain.h"
 
 int main(int argc, char *argv[])
 {
@@ -46,6 +47,8 @@ int main(int argc, char *argv[])
     //w.showMaximized();
     inputForm w;
     w.show();
+//    DlgMain w;
+//    w.show();
 
     return a.exec();
 }

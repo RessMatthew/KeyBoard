@@ -40,6 +40,7 @@ public:
     QPushButton *btnNext;
     QPushButton *btnStyle_2;
     QPushButton *btnStyle;
+    QPushButton *pushHand;
     QHBoxLayout *lay2;
     QLabel *labCh0;
     QLabel *labCh1;
@@ -53,88 +54,88 @@ public:
     QLabel *labCh9;
     QWidget *widgetMain;
     QGridLayout *gridLayout;
-    QPushButton *btnOther18;
-    QPushButton *btnb;
-    QPushButton *btnm;
-    QPushButton *btnv;
-    QPushButton *btnc;
-    QPushButton *btnSpace;
-    QPushButton *btnq;
-    QPushButton *btny;
-    QPushButton *btnp;
-    QPushButton *btno;
-    QPushButton *btne;
     QPushButton *btnw;
     QPushButton *btnu;
     QPushButton *btnOther10;
-    QPushButton *btnt;
-    QPushButton *btni;
-    QPushButton *btnz;
     QPushButton *btnx;
     QPushButton *btnr;
-    QPushButton *btnOther1;
-    QPushButton *btnOther5;
+    QPushButton *btni;
+    QPushButton *btnt;
+    QPushButton *btnz;
     QPushButton *btnOther4;
     QPushButton *btnOther2;
+    QPushButton *btnOther1;
     QPushButton *btnOther3;
-    QPushButton *btnOther6;
-    QPushButton *btnOther19;
+    QPushButton *btnOther5;
     QPushButton *btnOther20;
     QPushButton *btnOther8;
+    QPushButton *btnOther6;
     QPushButton *btnOther7;
     QPushButton *btnOther9;
-    QPushButton *btnOther11;
+    QPushButton *btnOther19;
     QPushButton *btnType;
+    QPushButton *btnOther11;
     QPushButton *btnOther17;
     QPushButton *btn9;
     QPushButton *btnDot;
+    QPushButton *btnz_alt_2;
+    QPushButton *btnz_ctrl;
     QPushButton *btn6;
     QPushButton *btnOther13;
     QPushButton *btn3;
-    QPushButton *btnz_alt_2;
-    QPushButton *btnz_ctrl;
+    QPushButton *SPEECHpushButton;
+    QPushButton *btn5;
     QPushButton *btnz_ctrl_3;
+    QPushButton *btn4;
     QPushButton *btnz_alt_3;
     QPushButton *btnz_win;
-    QPushButton *SPEECHpushButton;
-    QPushButton *btn4;
-    QPushButton *btn5;
-    QPushButton *btn8;
-    QSpacerItem *spacer;
     QPushButton *btn7;
+    QSpacerItem *spacer;
     QPushButton *btn2;
     QPushButton *btn1;
+    QPushButton *btn8;
     QPushButton *btnEnter;
-    QPushButton *btnOther15;
-    QPushButton *btnz_ctrl_4;
-    QPushButton *btnOther16;
     QPushButton *btnDelete;
+    QPushButton *btnOther15;
+    QPushButton *btnOther16;
     QPushButton *btnz_ctrl2;
+    QPushButton *btnz_ctrl_4;
     QPushButton *btnn;
-    QHBoxLayout *horizontalLayout;
     QPushButton *btnh;
     QPushButton *btna;
+    QHBoxLayout *horizontalLayout;
     QPushButton *btnl;
-    QPushButton *btnf;
-    QPushButton *btnOther14;
     QPushButton *btnd;
     QPushButton *btnj;
     QPushButton *btnOther21;
-    QPushButton *btng;
+    QPushButton *btnf;
+    QPushButton *btnOther14;
     QPushButton *btnk;
-    QPushButton *btns;
-    QPushButton *btnz_alt;
-    QPushButton *btnz_Num;
     QPushButton *btnOther8_3;
+    QPushButton *btng;
+    QPushButton *btnz_Num;
+    QPushButton *btnz_alt;
+    QPushButton *btns;
     QPushButton *btnOther12;
-    QPushButton *btnOther12_3;
     QPushButton *btn0;
+    QPushButton *btnOther12_3;
+    QPushButton *btnq;
+    QPushButton *btnp;
+    QPushButton *btno;
+    QPushButton *btnSpace;
+    QPushButton *btny;
+    QPushButton *btne;
+    QPushButton *btnm;
+    QPushButton *btnOther18;
+    QPushButton *btnb;
+    QPushButton *btnc;
+    QPushButton *btnv;
 
     void setupUi(QWidget *frmInput)
     {
         if (frmInput->objectName().isEmpty())
             frmInput->setObjectName(QStringLiteral("frmInput"));
-        frmInput->resize(680, 306);
+        frmInput->resize(818, 313);
         frmInput->setStyleSheet(QStringLiteral(""));
         verticalLayout_2 = new QVBoxLayout(frmInput);
         verticalLayout_2->setSpacing(6);
@@ -215,6 +216,11 @@ public:
         btnStyle->setStyleSheet(QStringLiteral(""));
 
         lay1->addWidget(btnStyle);
+
+        pushHand = new QPushButton(widgetTop);
+        pushHand->setObjectName(QStringLiteral("pushHand"));
+
+        lay1->addWidget(pushHand);
 
 
         verticalLayout->addLayout(lay1);
@@ -330,99 +336,11 @@ public:
         gridLayout->setSpacing(2);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 3, 0, 0);
-        btnOther18 = new QPushButton(widgetMain);
-        btnOther18->setObjectName(QStringLiteral("btnOther18"));
+        btnw = new QPushButton(widgetMain);
+        btnw->setObjectName(QStringLiteral("btnw"));
         QSizePolicy sizePolicy4(QSizePolicy::Ignored, QSizePolicy::Expanding);
         sizePolicy4.setHorizontalStretch(0);
         sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(btnOther18->sizePolicy().hasHeightForWidth());
-        btnOther18->setSizePolicy(sizePolicy4);
-        btnOther18->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnOther18, 3, 11, 1, 1);
-
-        btnb = new QPushButton(widgetMain);
-        btnb->setObjectName(QStringLiteral("btnb"));
-        sizePolicy4.setHeightForWidth(btnb->sizePolicy().hasHeightForWidth());
-        btnb->setSizePolicy(sizePolicy4);
-        btnb->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnb, 3, 7, 1, 1);
-
-        btnm = new QPushButton(widgetMain);
-        btnm->setObjectName(QStringLiteral("btnm"));
-        sizePolicy4.setHeightForWidth(btnm->sizePolicy().hasHeightForWidth());
-        btnm->setSizePolicy(sizePolicy4);
-        btnm->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnm, 3, 9, 1, 1);
-
-        btnv = new QPushButton(widgetMain);
-        btnv->setObjectName(QStringLiteral("btnv"));
-        sizePolicy4.setHeightForWidth(btnv->sizePolicy().hasHeightForWidth());
-        btnv->setSizePolicy(sizePolicy4);
-        btnv->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnv, 3, 6, 1, 1);
-
-        btnc = new QPushButton(widgetMain);
-        btnc->setObjectName(QStringLiteral("btnc"));
-        sizePolicy4.setHeightForWidth(btnc->sizePolicy().hasHeightForWidth());
-        btnc->setSizePolicy(sizePolicy4);
-        btnc->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnc, 3, 5, 1, 1);
-
-        btnSpace = new QPushButton(widgetMain);
-        btnSpace->setObjectName(QStringLiteral("btnSpace"));
-        sizePolicy4.setHeightForWidth(btnSpace->sizePolicy().hasHeightForWidth());
-        btnSpace->setSizePolicy(sizePolicy4);
-        btnSpace->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnSpace, 4, 4, 1, 7);
-
-        btnq = new QPushButton(widgetMain);
-        btnq->setObjectName(QStringLiteral("btnq"));
-        sizePolicy4.setHeightForWidth(btnq->sizePolicy().hasHeightForWidth());
-        btnq->setSizePolicy(sizePolicy4);
-        btnq->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnq, 1, 1, 1, 1);
-
-        btny = new QPushButton(widgetMain);
-        btny->setObjectName(QStringLiteral("btny"));
-        sizePolicy4.setHeightForWidth(btny->sizePolicy().hasHeightForWidth());
-        btny->setSizePolicy(sizePolicy4);
-        btny->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btny, 1, 6, 1, 1);
-
-        btnp = new QPushButton(widgetMain);
-        btnp->setObjectName(QStringLiteral("btnp"));
-        sizePolicy4.setHeightForWidth(btnp->sizePolicy().hasHeightForWidth());
-        btnp->setSizePolicy(sizePolicy4);
-        btnp->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnp, 1, 10, 1, 1);
-
-        btno = new QPushButton(widgetMain);
-        btno->setObjectName(QStringLiteral("btno"));
-        sizePolicy4.setHeightForWidth(btno->sizePolicy().hasHeightForWidth());
-        btno->setSizePolicy(sizePolicy4);
-        btno->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btno, 1, 9, 1, 1);
-
-        btne = new QPushButton(widgetMain);
-        btne->setObjectName(QStringLiteral("btne"));
-        sizePolicy4.setHeightForWidth(btne->sizePolicy().hasHeightForWidth());
-        btne->setSizePolicy(sizePolicy4);
-        btne->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btne, 1, 3, 1, 1);
-
-        btnw = new QPushButton(widgetMain);
-        btnw->setObjectName(QStringLiteral("btnw"));
         sizePolicy4.setHeightForWidth(btnw->sizePolicy().hasHeightForWidth());
         btnw->setSizePolicy(sizePolicy4);
         btnw->setFocusPolicy(Qt::NoFocus);
@@ -445,30 +363,6 @@ public:
 
         gridLayout->addWidget(btnOther10, 1, 11, 1, 1);
 
-        btnt = new QPushButton(widgetMain);
-        btnt->setObjectName(QStringLiteral("btnt"));
-        sizePolicy4.setHeightForWidth(btnt->sizePolicy().hasHeightForWidth());
-        btnt->setSizePolicy(sizePolicy4);
-        btnt->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnt, 1, 5, 1, 1);
-
-        btni = new QPushButton(widgetMain);
-        btni->setObjectName(QStringLiteral("btni"));
-        sizePolicy4.setHeightForWidth(btni->sizePolicy().hasHeightForWidth());
-        btni->setSizePolicy(sizePolicy4);
-        btni->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btni, 1, 8, 1, 1);
-
-        btnz = new QPushButton(widgetMain);
-        btnz->setObjectName(QStringLiteral("btnz"));
-        sizePolicy4.setHeightForWidth(btnz->sizePolicy().hasHeightForWidth());
-        btnz->setSizePolicy(sizePolicy4);
-        btnz->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnz, 3, 3, 1, 1);
-
         btnx = new QPushButton(widgetMain);
         btnx->setObjectName(QStringLiteral("btnx"));
         sizePolicy4.setHeightForWidth(btnx->sizePolicy().hasHeightForWidth());
@@ -485,21 +379,29 @@ public:
 
         gridLayout->addWidget(btnr, 1, 4, 1, 1);
 
-        btnOther1 = new QPushButton(widgetMain);
-        btnOther1->setObjectName(QStringLiteral("btnOther1"));
-        sizePolicy4.setHeightForWidth(btnOther1->sizePolicy().hasHeightForWidth());
-        btnOther1->setSizePolicy(sizePolicy4);
-        btnOther1->setFocusPolicy(Qt::NoFocus);
+        btni = new QPushButton(widgetMain);
+        btni->setObjectName(QStringLiteral("btni"));
+        sizePolicy4.setHeightForWidth(btni->sizePolicy().hasHeightForWidth());
+        btni->setSizePolicy(sizePolicy4);
+        btni->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnOther1, 0, 0, 1, 1);
+        gridLayout->addWidget(btni, 1, 8, 1, 1);
 
-        btnOther5 = new QPushButton(widgetMain);
-        btnOther5->setObjectName(QStringLiteral("btnOther5"));
-        sizePolicy4.setHeightForWidth(btnOther5->sizePolicy().hasHeightForWidth());
-        btnOther5->setSizePolicy(sizePolicy4);
-        btnOther5->setFocusPolicy(Qt::NoFocus);
+        btnt = new QPushButton(widgetMain);
+        btnt->setObjectName(QStringLiteral("btnt"));
+        sizePolicy4.setHeightForWidth(btnt->sizePolicy().hasHeightForWidth());
+        btnt->setSizePolicy(sizePolicy4);
+        btnt->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnOther5, 0, 4, 1, 1);
+        gridLayout->addWidget(btnt, 1, 5, 1, 1);
+
+        btnz = new QPushButton(widgetMain);
+        btnz->setObjectName(QStringLiteral("btnz"));
+        sizePolicy4.setHeightForWidth(btnz->sizePolicy().hasHeightForWidth());
+        btnz->setSizePolicy(sizePolicy4);
+        btnz->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnz, 3, 3, 1, 1);
 
         btnOther4 = new QPushButton(widgetMain);
         btnOther4->setObjectName(QStringLiteral("btnOther4"));
@@ -517,6 +419,14 @@ public:
 
         gridLayout->addWidget(btnOther2, 0, 1, 1, 1);
 
+        btnOther1 = new QPushButton(widgetMain);
+        btnOther1->setObjectName(QStringLiteral("btnOther1"));
+        sizePolicy4.setHeightForWidth(btnOther1->sizePolicy().hasHeightForWidth());
+        btnOther1->setSizePolicy(sizePolicy4);
+        btnOther1->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnOther1, 0, 0, 1, 1);
+
         btnOther3 = new QPushButton(widgetMain);
         btnOther3->setObjectName(QStringLiteral("btnOther3"));
         sizePolicy4.setHeightForWidth(btnOther3->sizePolicy().hasHeightForWidth());
@@ -525,21 +435,13 @@ public:
 
         gridLayout->addWidget(btnOther3, 0, 2, 1, 1);
 
-        btnOther6 = new QPushButton(widgetMain);
-        btnOther6->setObjectName(QStringLiteral("btnOther6"));
-        sizePolicy4.setHeightForWidth(btnOther6->sizePolicy().hasHeightForWidth());
-        btnOther6->setSizePolicy(sizePolicy4);
-        btnOther6->setFocusPolicy(Qt::NoFocus);
+        btnOther5 = new QPushButton(widgetMain);
+        btnOther5->setObjectName(QStringLiteral("btnOther5"));
+        sizePolicy4.setHeightForWidth(btnOther5->sizePolicy().hasHeightForWidth());
+        btnOther5->setSizePolicy(sizePolicy4);
+        btnOther5->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnOther6, 0, 5, 1, 1);
-
-        btnOther19 = new QPushButton(widgetMain);
-        btnOther19->setObjectName(QStringLiteral("btnOther19"));
-        sizePolicy4.setHeightForWidth(btnOther19->sizePolicy().hasHeightForWidth());
-        btnOther19->setSizePolicy(sizePolicy4);
-        btnOther19->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnOther19, 0, 8, 1, 1);
+        gridLayout->addWidget(btnOther5, 0, 4, 1, 1);
 
         btnOther20 = new QPushButton(widgetMain);
         btnOther20->setObjectName(QStringLiteral("btnOther20"));
@@ -557,6 +459,14 @@ public:
 
         gridLayout->addWidget(btnOther8, 0, 7, 1, 1);
 
+        btnOther6 = new QPushButton(widgetMain);
+        btnOther6->setObjectName(QStringLiteral("btnOther6"));
+        sizePolicy4.setHeightForWidth(btnOther6->sizePolicy().hasHeightForWidth());
+        btnOther6->setSizePolicy(sizePolicy4);
+        btnOther6->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnOther6, 0, 5, 1, 1);
+
         btnOther7 = new QPushButton(widgetMain);
         btnOther7->setObjectName(QStringLiteral("btnOther7"));
         sizePolicy4.setHeightForWidth(btnOther7->sizePolicy().hasHeightForWidth());
@@ -573,13 +483,13 @@ public:
 
         gridLayout->addWidget(btnOther9, 0, 10, 1, 1);
 
-        btnOther11 = new QPushButton(widgetMain);
-        btnOther11->setObjectName(QStringLiteral("btnOther11"));
-        sizePolicy4.setHeightForWidth(btnOther11->sizePolicy().hasHeightForWidth());
-        btnOther11->setSizePolicy(sizePolicy4);
-        btnOther11->setFocusPolicy(Qt::NoFocus);
+        btnOther19 = new QPushButton(widgetMain);
+        btnOther19->setObjectName(QStringLiteral("btnOther19"));
+        sizePolicy4.setHeightForWidth(btnOther19->sizePolicy().hasHeightForWidth());
+        btnOther19->setSizePolicy(sizePolicy4);
+        btnOther19->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnOther11, 0, 11, 1, 1);
+        gridLayout->addWidget(btnOther19, 0, 8, 1, 1);
 
         btnType = new QPushButton(widgetMain);
         btnType->setObjectName(QStringLiteral("btnType"));
@@ -588,6 +498,14 @@ public:
         btnType->setFocusPolicy(Qt::NoFocus);
 
         gridLayout->addWidget(btnType, 2, 0, 1, 2);
+
+        btnOther11 = new QPushButton(widgetMain);
+        btnOther11->setObjectName(QStringLiteral("btnOther11"));
+        sizePolicy4.setHeightForWidth(btnOther11->sizePolicy().hasHeightForWidth());
+        btnOther11->setSizePolicy(sizePolicy4);
+        btnOther11->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnOther11, 0, 11, 1, 1);
 
         btnOther17 = new QPushButton(widgetMain);
         btnOther17->setObjectName(QStringLiteral("btnOther17"));
@@ -613,6 +531,22 @@ public:
 
         gridLayout->addWidget(btnDot, 4, 18, 1, 1);
 
+        btnz_alt_2 = new QPushButton(widgetMain);
+        btnz_alt_2->setObjectName(QStringLiteral("btnz_alt_2"));
+        sizePolicy4.setHeightForWidth(btnz_alt_2->sizePolicy().hasHeightForWidth());
+        btnz_alt_2->setSizePolicy(sizePolicy4);
+        btnz_alt_2->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnz_alt_2, 4, 11, 1, 1);
+
+        btnz_ctrl = new QPushButton(widgetMain);
+        btnz_ctrl->setObjectName(QStringLiteral("btnz_ctrl"));
+        sizePolicy4.setHeightForWidth(btnz_ctrl->sizePolicy().hasHeightForWidth());
+        btnz_ctrl->setSizePolicy(sizePolicy4);
+        btnz_ctrl->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnz_ctrl, 4, 0, 1, 2);
+
         btn6 = new QPushButton(widgetMain);
         btn6->setObjectName(QStringLiteral("btn6"));
         sizePolicy4.setHeightForWidth(btn6->sizePolicy().hasHeightForWidth());
@@ -637,21 +571,21 @@ public:
 
         gridLayout->addWidget(btn3, 3, 18, 1, 1);
 
-        btnz_alt_2 = new QPushButton(widgetMain);
-        btnz_alt_2->setObjectName(QStringLiteral("btnz_alt_2"));
-        sizePolicy4.setHeightForWidth(btnz_alt_2->sizePolicy().hasHeightForWidth());
-        btnz_alt_2->setSizePolicy(sizePolicy4);
-        btnz_alt_2->setFocusPolicy(Qt::NoFocus);
+        SPEECHpushButton = new QPushButton(widgetMain);
+        SPEECHpushButton->setObjectName(QStringLiteral("SPEECHpushButton"));
+        sizePolicy4.setHeightForWidth(SPEECHpushButton->sizePolicy().hasHeightForWidth());
+        SPEECHpushButton->setSizePolicy(sizePolicy4);
+        SPEECHpushButton->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnz_alt_2, 4, 11, 1, 1);
+        gridLayout->addWidget(SPEECHpushButton, 3, 0, 1, 3);
 
-        btnz_ctrl = new QPushButton(widgetMain);
-        btnz_ctrl->setObjectName(QStringLiteral("btnz_ctrl"));
-        sizePolicy4.setHeightForWidth(btnz_ctrl->sizePolicy().hasHeightForWidth());
-        btnz_ctrl->setSizePolicy(sizePolicy4);
-        btnz_ctrl->setFocusPolicy(Qt::NoFocus);
+        btn5 = new QPushButton(widgetMain);
+        btn5->setObjectName(QStringLiteral("btn5"));
+        sizePolicy4.setHeightForWidth(btn5->sizePolicy().hasHeightForWidth());
+        btn5->setSizePolicy(sizePolicy4);
+        btn5->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnz_ctrl, 4, 0, 1, 2);
+        gridLayout->addWidget(btn5, 2, 17, 1, 1);
 
         btnz_ctrl_3 = new QPushButton(widgetMain);
         btnz_ctrl_3->setObjectName(QStringLiteral("btnz_ctrl_3"));
@@ -660,6 +594,14 @@ public:
         btnz_ctrl_3->setFocusPolicy(Qt::NoFocus);
 
         gridLayout->addWidget(btnz_ctrl_3, 1, 0, 1, 1);
+
+        btn4 = new QPushButton(widgetMain);
+        btn4->setObjectName(QStringLiteral("btn4"));
+        sizePolicy4.setHeightForWidth(btn4->sizePolicy().hasHeightForWidth());
+        btn4->setSizePolicy(sizePolicy4);
+        btn4->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btn4, 2, 16, 1, 1);
 
         btnz_alt_3 = new QPushButton(widgetMain);
         btnz_alt_3->setObjectName(QStringLiteral("btnz_alt_3"));
@@ -677,42 +619,6 @@ public:
 
         gridLayout->addWidget(btnz_win, 4, 2, 1, 1);
 
-        SPEECHpushButton = new QPushButton(widgetMain);
-        SPEECHpushButton->setObjectName(QStringLiteral("SPEECHpushButton"));
-        sizePolicy4.setHeightForWidth(SPEECHpushButton->sizePolicy().hasHeightForWidth());
-        SPEECHpushButton->setSizePolicy(sizePolicy4);
-        SPEECHpushButton->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(SPEECHpushButton, 3, 0, 1, 3);
-
-        btn4 = new QPushButton(widgetMain);
-        btn4->setObjectName(QStringLiteral("btn4"));
-        sizePolicy4.setHeightForWidth(btn4->sizePolicy().hasHeightForWidth());
-        btn4->setSizePolicy(sizePolicy4);
-        btn4->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btn4, 2, 16, 1, 1);
-
-        btn5 = new QPushButton(widgetMain);
-        btn5->setObjectName(QStringLiteral("btn5"));
-        sizePolicy4.setHeightForWidth(btn5->sizePolicy().hasHeightForWidth());
-        btn5->setSizePolicy(sizePolicy4);
-        btn5->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btn5, 2, 17, 1, 1);
-
-        btn8 = new QPushButton(widgetMain);
-        btn8->setObjectName(QStringLiteral("btn8"));
-        sizePolicy4.setHeightForWidth(btn8->sizePolicy().hasHeightForWidth());
-        btn8->setSizePolicy(sizePolicy4);
-        btn8->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btn8, 1, 17, 1, 1);
-
-        spacer = new QSpacerItem(15, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
-
-        gridLayout->addItem(spacer, 0, 15, 1, 1);
-
         btn7 = new QPushButton(widgetMain);
         btn7->setObjectName(QStringLiteral("btn7"));
         sizePolicy4.setHeightForWidth(btn7->sizePolicy().hasHeightForWidth());
@@ -720,6 +626,10 @@ public:
         btn7->setFocusPolicy(Qt::NoFocus);
 
         gridLayout->addWidget(btn7, 1, 16, 1, 1);
+
+        spacer = new QSpacerItem(15, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        gridLayout->addItem(spacer, 0, 15, 1, 1);
 
         btn2 = new QPushButton(widgetMain);
         btn2->setObjectName(QStringLiteral("btn2"));
@@ -737,6 +647,14 @@ public:
 
         gridLayout->addWidget(btn1, 3, 16, 1, 1);
 
+        btn8 = new QPushButton(widgetMain);
+        btn8->setObjectName(QStringLiteral("btn8"));
+        sizePolicy4.setHeightForWidth(btn8->sizePolicy().hasHeightForWidth());
+        btn8->setSizePolicy(sizePolicy4);
+        btn8->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btn8, 1, 17, 1, 1);
+
         btnEnter = new QPushButton(widgetMain);
         btnEnter->setObjectName(QStringLiteral("btnEnter"));
         sizePolicy4.setHeightForWidth(btnEnter->sizePolicy().hasHeightForWidth());
@@ -744,30 +662,6 @@ public:
         btnEnter->setFocusPolicy(Qt::NoFocus);
 
         gridLayout->addWidget(btnEnter, 2, 13, 1, 2);
-
-        btnOther15 = new QPushButton(widgetMain);
-        btnOther15->setObjectName(QStringLiteral("btnOther15"));
-        sizePolicy4.setHeightForWidth(btnOther15->sizePolicy().hasHeightForWidth());
-        btnOther15->setSizePolicy(sizePolicy4);
-        btnOther15->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnOther15, 3, 12, 1, 1);
-
-        btnz_ctrl_4 = new QPushButton(widgetMain);
-        btnz_ctrl_4->setObjectName(QStringLiteral("btnz_ctrl_4"));
-        sizePolicy4.setHeightForWidth(btnz_ctrl_4->sizePolicy().hasHeightForWidth());
-        btnz_ctrl_4->setSizePolicy(sizePolicy4);
-        btnz_ctrl_4->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnz_ctrl_4, 3, 13, 1, 2);
-
-        btnOther16 = new QPushButton(widgetMain);
-        btnOther16->setObjectName(QStringLiteral("btnOther16"));
-        sizePolicy4.setHeightForWidth(btnOther16->sizePolicy().hasHeightForWidth());
-        btnOther16->setSizePolicy(sizePolicy4);
-        btnOther16->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnOther16, 0, 12, 1, 1);
 
         btnDelete = new QPushButton(widgetMain);
         btnDelete->setObjectName(QStringLiteral("btnDelete"));
@@ -777,6 +671,22 @@ public:
 
         gridLayout->addWidget(btnDelete, 0, 13, 1, 2);
 
+        btnOther15 = new QPushButton(widgetMain);
+        btnOther15->setObjectName(QStringLiteral("btnOther15"));
+        sizePolicy4.setHeightForWidth(btnOther15->sizePolicy().hasHeightForWidth());
+        btnOther15->setSizePolicy(sizePolicy4);
+        btnOther15->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnOther15, 3, 12, 1, 1);
+
+        btnOther16 = new QPushButton(widgetMain);
+        btnOther16->setObjectName(QStringLiteral("btnOther16"));
+        sizePolicy4.setHeightForWidth(btnOther16->sizePolicy().hasHeightForWidth());
+        btnOther16->setSizePolicy(sizePolicy4);
+        btnOther16->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnOther16, 0, 12, 1, 1);
+
         btnz_ctrl2 = new QPushButton(widgetMain);
         btnz_ctrl2->setObjectName(QStringLiteral("btnz_ctrl2"));
         sizePolicy4.setHeightForWidth(btnz_ctrl2->sizePolicy().hasHeightForWidth());
@@ -785,6 +695,14 @@ public:
 
         gridLayout->addWidget(btnz_ctrl2, 4, 13, 1, 2);
 
+        btnz_ctrl_4 = new QPushButton(widgetMain);
+        btnz_ctrl_4->setObjectName(QStringLiteral("btnz_ctrl_4"));
+        sizePolicy4.setHeightForWidth(btnz_ctrl_4->sizePolicy().hasHeightForWidth());
+        btnz_ctrl_4->setSizePolicy(sizePolicy4);
+        btnz_ctrl_4->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnz_ctrl_4, 3, 13, 1, 2);
+
         btnn = new QPushButton(widgetMain);
         btnn->setObjectName(QStringLiteral("btnn"));
         sizePolicy4.setHeightForWidth(btnn->sizePolicy().hasHeightForWidth());
@@ -792,12 +710,6 @@ public:
         btnn->setFocusPolicy(Qt::NoFocus);
 
         gridLayout->addWidget(btnn, 3, 8, 1, 1);
-
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(2);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-
-        gridLayout->addLayout(horizontalLayout, 4, 15, 1, 1);
 
         btnh = new QPushButton(widgetMain);
         btnh->setObjectName(QStringLiteral("btnh"));
@@ -815,6 +727,12 @@ public:
 
         gridLayout->addWidget(btna, 2, 2, 1, 1);
 
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(2);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+
+        gridLayout->addLayout(horizontalLayout, 4, 15, 1, 1);
+
         btnl = new QPushButton(widgetMain);
         btnl->setObjectName(QStringLiteral("btnl"));
         sizePolicy4.setHeightForWidth(btnl->sizePolicy().hasHeightForWidth());
@@ -822,22 +740,6 @@ public:
         btnl->setFocusPolicy(Qt::NoFocus);
 
         gridLayout->addWidget(btnl, 2, 10, 1, 1);
-
-        btnf = new QPushButton(widgetMain);
-        btnf->setObjectName(QStringLiteral("btnf"));
-        sizePolicy4.setHeightForWidth(btnf->sizePolicy().hasHeightForWidth());
-        btnf->setSizePolicy(sizePolicy4);
-        btnf->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnf, 2, 5, 1, 1);
-
-        btnOther14 = new QPushButton(widgetMain);
-        btnOther14->setObjectName(QStringLiteral("btnOther14"));
-        sizePolicy4.setHeightForWidth(btnOther14->sizePolicy().hasHeightForWidth());
-        btnOther14->setSizePolicy(sizePolicy4);
-        btnOther14->setFocusPolicy(Qt::NoFocus);
-
-        gridLayout->addWidget(btnOther14, 2, 11, 1, 1);
 
         btnd = new QPushButton(widgetMain);
         btnd->setObjectName(QStringLiteral("btnd"));
@@ -863,13 +765,21 @@ public:
 
         gridLayout->addWidget(btnOther21, 2, 12, 1, 1);
 
-        btng = new QPushButton(widgetMain);
-        btng->setObjectName(QStringLiteral("btng"));
-        sizePolicy4.setHeightForWidth(btng->sizePolicy().hasHeightForWidth());
-        btng->setSizePolicy(sizePolicy4);
-        btng->setFocusPolicy(Qt::NoFocus);
+        btnf = new QPushButton(widgetMain);
+        btnf->setObjectName(QStringLiteral("btnf"));
+        sizePolicy4.setHeightForWidth(btnf->sizePolicy().hasHeightForWidth());
+        btnf->setSizePolicy(sizePolicy4);
+        btnf->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btng, 2, 6, 1, 1);
+        gridLayout->addWidget(btnf, 2, 5, 1, 1);
+
+        btnOther14 = new QPushButton(widgetMain);
+        btnOther14->setObjectName(QStringLiteral("btnOther14"));
+        sizePolicy4.setHeightForWidth(btnOther14->sizePolicy().hasHeightForWidth());
+        btnOther14->setSizePolicy(sizePolicy4);
+        btnOther14->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnOther14, 2, 11, 1, 1);
 
         btnk = new QPushButton(widgetMain);
         btnk->setObjectName(QStringLiteral("btnk"));
@@ -879,21 +789,21 @@ public:
 
         gridLayout->addWidget(btnk, 2, 9, 1, 1);
 
-        btns = new QPushButton(widgetMain);
-        btns->setObjectName(QStringLiteral("btns"));
-        sizePolicy4.setHeightForWidth(btns->sizePolicy().hasHeightForWidth());
-        btns->setSizePolicy(sizePolicy4);
-        btns->setFocusPolicy(Qt::NoFocus);
+        btnOther8_3 = new QPushButton(widgetMain);
+        btnOther8_3->setObjectName(QStringLiteral("btnOther8_3"));
+        sizePolicy4.setHeightForWidth(btnOther8_3->sizePolicy().hasHeightForWidth());
+        btnOther8_3->setSizePolicy(sizePolicy4);
+        btnOther8_3->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btns, 2, 3, 1, 1);
+        gridLayout->addWidget(btnOther8_3, 0, 18, 1, 1);
 
-        btnz_alt = new QPushButton(widgetMain);
-        btnz_alt->setObjectName(QStringLiteral("btnz_alt"));
-        sizePolicy4.setHeightForWidth(btnz_alt->sizePolicy().hasHeightForWidth());
-        btnz_alt->setSizePolicy(sizePolicy4);
-        btnz_alt->setFocusPolicy(Qt::NoFocus);
+        btng = new QPushButton(widgetMain);
+        btng->setObjectName(QStringLiteral("btng"));
+        sizePolicy4.setHeightForWidth(btng->sizePolicy().hasHeightForWidth());
+        btng->setSizePolicy(sizePolicy4);
+        btng->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnz_alt, 4, 3, 1, 1);
+        gridLayout->addWidget(btng, 2, 6, 1, 1);
 
         btnz_Num = new QPushButton(widgetMain);
         btnz_Num->setObjectName(QStringLiteral("btnz_Num"));
@@ -903,13 +813,21 @@ public:
 
         gridLayout->addWidget(btnz_Num, 0, 16, 1, 1);
 
-        btnOther8_3 = new QPushButton(widgetMain);
-        btnOther8_3->setObjectName(QStringLiteral("btnOther8_3"));
-        sizePolicy4.setHeightForWidth(btnOther8_3->sizePolicy().hasHeightForWidth());
-        btnOther8_3->setSizePolicy(sizePolicy4);
-        btnOther8_3->setFocusPolicy(Qt::NoFocus);
+        btnz_alt = new QPushButton(widgetMain);
+        btnz_alt->setObjectName(QStringLiteral("btnz_alt"));
+        sizePolicy4.setHeightForWidth(btnz_alt->sizePolicy().hasHeightForWidth());
+        btnz_alt->setSizePolicy(sizePolicy4);
+        btnz_alt->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btnOther8_3, 0, 18, 1, 1);
+        gridLayout->addWidget(btnz_alt, 4, 3, 1, 1);
+
+        btns = new QPushButton(widgetMain);
+        btns->setObjectName(QStringLiteral("btns"));
+        sizePolicy4.setHeightForWidth(btns->sizePolicy().hasHeightForWidth());
+        btns->setSizePolicy(sizePolicy4);
+        btns->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btns, 2, 3, 1, 1);
 
         btnOther12 = new QPushButton(widgetMain);
         btnOther12->setObjectName(QStringLiteral("btnOther12"));
@@ -919,6 +837,14 @@ public:
 
         gridLayout->addWidget(btnOther12, 1, 12, 1, 1);
 
+        btn0 = new QPushButton(widgetMain);
+        btn0->setObjectName(QStringLiteral("btn0"));
+        sizePolicy4.setHeightForWidth(btn0->sizePolicy().hasHeightForWidth());
+        btn0->setSizePolicy(sizePolicy4);
+        btn0->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btn0, 4, 16, 1, 2);
+
         btnOther12_3 = new QPushButton(widgetMain);
         btnOther12_3->setObjectName(QStringLiteral("btnOther12_3"));
         sizePolicy4.setHeightForWidth(btnOther12_3->sizePolicy().hasHeightForWidth());
@@ -927,13 +853,93 @@ public:
 
         gridLayout->addWidget(btnOther12_3, 0, 17, 1, 1);
 
-        btn0 = new QPushButton(widgetMain);
-        btn0->setObjectName(QStringLiteral("btn0"));
-        sizePolicy4.setHeightForWidth(btn0->sizePolicy().hasHeightForWidth());
-        btn0->setSizePolicy(sizePolicy4);
-        btn0->setFocusPolicy(Qt::NoFocus);
+        btnq = new QPushButton(widgetMain);
+        btnq->setObjectName(QStringLiteral("btnq"));
+        sizePolicy4.setHeightForWidth(btnq->sizePolicy().hasHeightForWidth());
+        btnq->setSizePolicy(sizePolicy4);
+        btnq->setFocusPolicy(Qt::NoFocus);
 
-        gridLayout->addWidget(btn0, 4, 16, 1, 2);
+        gridLayout->addWidget(btnq, 1, 1, 1, 1);
+
+        btnp = new QPushButton(widgetMain);
+        btnp->setObjectName(QStringLiteral("btnp"));
+        sizePolicy4.setHeightForWidth(btnp->sizePolicy().hasHeightForWidth());
+        btnp->setSizePolicy(sizePolicy4);
+        btnp->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnp, 1, 10, 1, 1);
+
+        btno = new QPushButton(widgetMain);
+        btno->setObjectName(QStringLiteral("btno"));
+        sizePolicy4.setHeightForWidth(btno->sizePolicy().hasHeightForWidth());
+        btno->setSizePolicy(sizePolicy4);
+        btno->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btno, 1, 9, 1, 1);
+
+        btnSpace = new QPushButton(widgetMain);
+        btnSpace->setObjectName(QStringLiteral("btnSpace"));
+        sizePolicy4.setHeightForWidth(btnSpace->sizePolicy().hasHeightForWidth());
+        btnSpace->setSizePolicy(sizePolicy4);
+        btnSpace->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnSpace, 4, 4, 1, 7);
+
+        btny = new QPushButton(widgetMain);
+        btny->setObjectName(QStringLiteral("btny"));
+        sizePolicy4.setHeightForWidth(btny->sizePolicy().hasHeightForWidth());
+        btny->setSizePolicy(sizePolicy4);
+        btny->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btny, 1, 6, 1, 1);
+
+        btne = new QPushButton(widgetMain);
+        btne->setObjectName(QStringLiteral("btne"));
+        sizePolicy4.setHeightForWidth(btne->sizePolicy().hasHeightForWidth());
+        btne->setSizePolicy(sizePolicy4);
+        btne->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btne, 1, 3, 1, 1);
+
+        btnm = new QPushButton(widgetMain);
+        btnm->setObjectName(QStringLiteral("btnm"));
+        sizePolicy4.setHeightForWidth(btnm->sizePolicy().hasHeightForWidth());
+        btnm->setSizePolicy(sizePolicy4);
+        btnm->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnm, 3, 9, 1, 1);
+
+        btnOther18 = new QPushButton(widgetMain);
+        btnOther18->setObjectName(QStringLiteral("btnOther18"));
+        sizePolicy4.setHeightForWidth(btnOther18->sizePolicy().hasHeightForWidth());
+        btnOther18->setSizePolicy(sizePolicy4);
+        btnOther18->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnOther18, 3, 11, 1, 1);
+
+        btnb = new QPushButton(widgetMain);
+        btnb->setObjectName(QStringLiteral("btnb"));
+        sizePolicy4.setHeightForWidth(btnb->sizePolicy().hasHeightForWidth());
+        btnb->setSizePolicy(sizePolicy4);
+        btnb->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnb, 3, 7, 1, 1);
+
+        btnc = new QPushButton(widgetMain);
+        btnc->setObjectName(QStringLiteral("btnc"));
+        sizePolicy4.setHeightForWidth(btnc->sizePolicy().hasHeightForWidth());
+        btnc->setSizePolicy(sizePolicy4);
+        btnc->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnc, 3, 5, 1, 1);
+
+        btnv = new QPushButton(widgetMain);
+        btnv->setObjectName(QStringLiteral("btnv"));
+        sizePolicy4.setHeightForWidth(btnv->sizePolicy().hasHeightForWidth());
+        btnv->setSizePolicy(sizePolicy4);
+        btnv->setFocusPolicy(Qt::NoFocus);
+
+        gridLayout->addWidget(btnv, 3, 6, 1, 1);
 
 
         verticalLayout_3->addWidget(widgetMain);
@@ -957,6 +963,7 @@ public:
         btnNext->setText(QApplication::translate("frmInput", ">", Q_NULLPTR));
         btnStyle_2->setText(QApplication::translate("frmInput", "DataBase", Q_NULLPTR));
         btnStyle->setText(QApplication::translate("frmInput", "Style", Q_NULLPTR));
+        pushHand->setText(QApplication::translate("frmInput", "Hand", Q_NULLPTR));
         labCh0->setText(QString());
         labCh1->setText(QString());
         labCh2->setText(QString());
@@ -967,80 +974,80 @@ public:
         labCh7->setText(QString());
         labCh8->setText(QString());
         labCh9->setText(QString());
-        btnOther18->setText(QApplication::translate("frmInput", "\\", Q_NULLPTR));
-        btnb->setText(QApplication::translate("frmInput", "b", Q_NULLPTR));
-        btnm->setText(QApplication::translate("frmInput", "m", Q_NULLPTR));
-        btnv->setText(QApplication::translate("frmInput", "v", Q_NULLPTR));
-        btnc->setText(QApplication::translate("frmInput", "c", Q_NULLPTR));
-        btnSpace->setText(QApplication::translate("frmInput", "Space", Q_NULLPTR));
-        btnq->setText(QApplication::translate("frmInput", "q", Q_NULLPTR));
-        btny->setText(QApplication::translate("frmInput", "y", Q_NULLPTR));
-        btnp->setText(QApplication::translate("frmInput", "p", Q_NULLPTR));
-        btno->setText(QApplication::translate("frmInput", "o", Q_NULLPTR));
-        btne->setText(QApplication::translate("frmInput", "e", Q_NULLPTR));
         btnw->setText(QApplication::translate("frmInput", "w", Q_NULLPTR));
         btnu->setText(QApplication::translate("frmInput", "u", Q_NULLPTR));
         btnOther10->setText(QApplication::translate("frmInput", "_", Q_NULLPTR));
-        btnt->setText(QApplication::translate("frmInput", "t", Q_NULLPTR));
-        btni->setText(QApplication::translate("frmInput", "i", Q_NULLPTR));
-        btnz->setText(QApplication::translate("frmInput", "z", Q_NULLPTR));
         btnx->setText(QApplication::translate("frmInput", "x", Q_NULLPTR));
         btnr->setText(QApplication::translate("frmInput", "r", Q_NULLPTR));
-        btnOther1->setText(QApplication::translate("frmInput", "!", Q_NULLPTR));
-        btnOther5->setText(QApplication::translate("frmInput", "%", Q_NULLPTR));
+        btni->setText(QApplication::translate("frmInput", "i", Q_NULLPTR));
+        btnt->setText(QApplication::translate("frmInput", "t", Q_NULLPTR));
+        btnz->setText(QApplication::translate("frmInput", "z", Q_NULLPTR));
         btnOther4->setText(QApplication::translate("frmInput", "$", Q_NULLPTR));
         btnOther2->setText(QApplication::translate("frmInput", "@", Q_NULLPTR));
+        btnOther1->setText(QApplication::translate("frmInput", "!", Q_NULLPTR));
         btnOther3->setText(QApplication::translate("frmInput", "#", Q_NULLPTR));
-        btnOther6->setText(QApplication::translate("frmInput", "^", Q_NULLPTR));
-        btnOther19->setText(QApplication::translate("frmInput", "(", Q_NULLPTR));
+        btnOther5->setText(QApplication::translate("frmInput", "%", Q_NULLPTR));
         btnOther20->setText(QApplication::translate("frmInput", ")", Q_NULLPTR));
         btnOther8->setText(QApplication::translate("frmInput", "*", Q_NULLPTR));
+        btnOther6->setText(QApplication::translate("frmInput", "^", Q_NULLPTR));
         btnOther7->setText(QApplication::translate("frmInput", "&&", Q_NULLPTR));
         btnOther9->setText(QApplication::translate("frmInput", "-", Q_NULLPTR));
-        btnOther11->setText(QApplication::translate("frmInput", "+", Q_NULLPTR));
+        btnOther19->setText(QApplication::translate("frmInput", "(", Q_NULLPTR));
         btnType->setText(QApplication::translate("frmInput", "\345\260\217\345\206\231", Q_NULLPTR));
+        btnOther11->setText(QApplication::translate("frmInput", "+", Q_NULLPTR));
         btnOther17->setText(QApplication::translate("frmInput", ",", Q_NULLPTR));
         btn9->setText(QApplication::translate("frmInput", "9", Q_NULLPTR));
         btnDot->setText(QApplication::translate("frmInput", ".", Q_NULLPTR));
+        btnz_alt_2->setText(QApplication::translate("frmInput", "alt", Q_NULLPTR));
+        btnz_ctrl->setText(QApplication::translate("frmInput", "ctrl", Q_NULLPTR));
         btn6->setText(QApplication::translate("frmInput", "6", Q_NULLPTR));
         btnOther13->setText(QApplication::translate("frmInput", "|", Q_NULLPTR));
         btn3->setText(QApplication::translate("frmInput", "3", Q_NULLPTR));
-        btnz_alt_2->setText(QApplication::translate("frmInput", "alt", Q_NULLPTR));
-        btnz_ctrl->setText(QApplication::translate("frmInput", "ctrl", Q_NULLPTR));
+        SPEECHpushButton->setText(QApplication::translate("frmInput", "\346\214\211\344\275\217\350\257\264\350\257\235", Q_NULLPTR));
+        btn5->setText(QApplication::translate("frmInput", "5", Q_NULLPTR));
         btnz_ctrl_3->setText(QApplication::translate("frmInput", "tab", Q_NULLPTR));
+        btn4->setText(QApplication::translate("frmInput", "4", Q_NULLPTR));
         btnz_alt_3->setText(QApplication::translate("frmInput", "fn", Q_NULLPTR));
         btnz_win->setText(QApplication::translate("frmInput", "win", Q_NULLPTR));
-        SPEECHpushButton->setText(QApplication::translate("frmInput", "\346\214\211\344\275\217\350\257\264\350\257\235", Q_NULLPTR));
-        btn4->setText(QApplication::translate("frmInput", "4", Q_NULLPTR));
-        btn5->setText(QApplication::translate("frmInput", "5", Q_NULLPTR));
-        btn8->setText(QApplication::translate("frmInput", "8", Q_NULLPTR));
         btn7->setText(QApplication::translate("frmInput", "7", Q_NULLPTR));
         btn2->setText(QApplication::translate("frmInput", "2", Q_NULLPTR));
         btn1->setText(QApplication::translate("frmInput", "1", Q_NULLPTR));
+        btn8->setText(QApplication::translate("frmInput", "8", Q_NULLPTR));
         btnEnter->setText(QApplication::translate("frmInput", "Enter", Q_NULLPTR));
-        btnOther15->setText(QApplication::translate("frmInput", "?", Q_NULLPTR));
-        btnz_ctrl_4->setText(QApplication::translate("frmInput", "shfit", Q_NULLPTR));
-        btnOther16->setText(QApplication::translate("frmInput", "=", Q_NULLPTR));
         btnDelete->setText(QApplication::translate("frmInput", "\342\206\220", Q_NULLPTR));
+        btnOther15->setText(QApplication::translate("frmInput", "?", Q_NULLPTR));
+        btnOther16->setText(QApplication::translate("frmInput", "=", Q_NULLPTR));
         btnz_ctrl2->setText(QApplication::translate("frmInput", "ctrl", Q_NULLPTR));
+        btnz_ctrl_4->setText(QApplication::translate("frmInput", "shfit", Q_NULLPTR));
         btnn->setText(QApplication::translate("frmInput", "n", Q_NULLPTR));
         btnh->setText(QApplication::translate("frmInput", "h", Q_NULLPTR));
         btna->setText(QApplication::translate("frmInput", "a", Q_NULLPTR));
         btnl->setText(QApplication::translate("frmInput", "l", Q_NULLPTR));
-        btnf->setText(QApplication::translate("frmInput", "f", Q_NULLPTR));
-        btnOther14->setText(QApplication::translate("frmInput", ":", Q_NULLPTR));
         btnd->setText(QApplication::translate("frmInput", "d", Q_NULLPTR));
         btnj->setText(QApplication::translate("frmInput", "j", Q_NULLPTR));
         btnOther21->setText(QApplication::translate("frmInput", "\"", Q_NULLPTR));
-        btng->setText(QApplication::translate("frmInput", "g", Q_NULLPTR));
+        btnf->setText(QApplication::translate("frmInput", "f", Q_NULLPTR));
+        btnOther14->setText(QApplication::translate("frmInput", ":", Q_NULLPTR));
         btnk->setText(QApplication::translate("frmInput", "k", Q_NULLPTR));
-        btns->setText(QApplication::translate("frmInput", "s", Q_NULLPTR));
-        btnz_alt->setText(QApplication::translate("frmInput", "alt", Q_NULLPTR));
-        btnz_Num->setText(QApplication::translate("frmInput", "Num", Q_NULLPTR));
         btnOther8_3->setText(QApplication::translate("frmInput", "*", Q_NULLPTR));
+        btng->setText(QApplication::translate("frmInput", "g", Q_NULLPTR));
+        btnz_Num->setText(QApplication::translate("frmInput", "Num", Q_NULLPTR));
+        btnz_alt->setText(QApplication::translate("frmInput", "alt", Q_NULLPTR));
+        btns->setText(QApplication::translate("frmInput", "s", Q_NULLPTR));
         btnOther12->setText(QApplication::translate("frmInput", "/", Q_NULLPTR));
-        btnOther12_3->setText(QApplication::translate("frmInput", "/", Q_NULLPTR));
         btn0->setText(QApplication::translate("frmInput", "0", Q_NULLPTR));
+        btnOther12_3->setText(QApplication::translate("frmInput", "/", Q_NULLPTR));
+        btnq->setText(QApplication::translate("frmInput", "q", Q_NULLPTR));
+        btnp->setText(QApplication::translate("frmInput", "p", Q_NULLPTR));
+        btno->setText(QApplication::translate("frmInput", "o", Q_NULLPTR));
+        btnSpace->setText(QApplication::translate("frmInput", "Space", Q_NULLPTR));
+        btny->setText(QApplication::translate("frmInput", "y", Q_NULLPTR));
+        btne->setText(QApplication::translate("frmInput", "e", Q_NULLPTR));
+        btnm->setText(QApplication::translate("frmInput", "m", Q_NULLPTR));
+        btnOther18->setText(QApplication::translate("frmInput", "\\", Q_NULLPTR));
+        btnb->setText(QApplication::translate("frmInput", "b", Q_NULLPTR));
+        btnc->setText(QApplication::translate("frmInput", "c", Q_NULLPTR));
+        btnv->setText(QApplication::translate("frmInput", "v", Q_NULLPTR));
     } // retranslateUi
 
 };

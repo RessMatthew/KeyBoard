@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui sql network
+QT       += axcontainer
 #语言输入所需模块
 QT       += multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -21,7 +22,9 @@ SOURCES += main.cpp\
     adddatabase.cpp\
     audio.cpp\
     speech.cpp\
-    http.cpp
+    http.cpp\
+    DlgMain.cpp\
+    hand/handsinput.cpp
 
 HEADERS  += frmmain.h \
     frminput.h \
@@ -30,13 +33,18 @@ HEADERS  += frmmain.h \
     adddatabase.h\
     audio.h\
     speech.h\
-    http.h
+    http.h\
+    DlgMain.h\
+    hand/handsinput.h
 
 FORMS    += frmmain.ui \
     frmnum.ui \
     frminput.ui\
     inputform.ui \
-    adddatabase.ui
+    adddatabase.ui\
+    DlgMain.ui
+
+INCLUDEPATH +=C:\MicrosoftTablet\Include
 
 MOC_DIR         = temp/moc
 RCC_DIR         = temp/rcc

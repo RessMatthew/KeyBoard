@@ -226,6 +226,7 @@ Makefile: InputTool.pro E:/QT/5.9.1/mingw53_32/mkspecs/win32-g++/qmake.conf E:/Q
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/moc.prf \
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/win32/opengl.prf \
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/uic.prf \
+		E:/QT/5.9.1/mingw53_32/mkspecs/features/win32/dumpcpp.prf \
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/qmake_use.prf \
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/file_copies.prf \
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/win32/windows.prf \
@@ -235,8 +236,10 @@ Makefile: InputTool.pro E:/QT/5.9.1/mingw53_32/mkspecs/win32-g++/qmake.conf E:/Q
 		E:/QT/5.9.1/mingw53_32/mkspecs/features/lex.prf \
 		InputTool.pro \
 		E:/QT/5.9.1/mingw53_32/lib/qtmaind.prl \
-		E:/QT/5.9.1/mingw53_32/lib/Qt5Multimedia.prl \
+		E:/QT/5.9.1/mingw53_32/lib/Qt5AxContainer.prl \
+		E:/QT/5.9.1/mingw53_32/lib/Qt5AxBase.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Widgets.prl \
+		E:/QT/5.9.1/mingw53_32/lib/Qt5Multimedia.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Gui.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Sql.prl \
 		E:/QT/5.9.1/mingw53_32/lib/Qt5Network.prl \
@@ -407,6 +410,7 @@ E:/QT/5.9.1/mingw53_32/mkspecs/features/resources.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/moc.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/win32/opengl.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/uic.prf:
+E:/QT/5.9.1/mingw53_32/mkspecs/features/win32/dumpcpp.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/qmake_use.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/file_copies.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/win32/windows.prf:
@@ -416,8 +420,10 @@ E:/QT/5.9.1/mingw53_32/mkspecs/features/yacc.prf:
 E:/QT/5.9.1/mingw53_32/mkspecs/features/lex.prf:
 InputTool.pro:
 E:/QT/5.9.1/mingw53_32/lib/qtmaind.prl:
-E:/QT/5.9.1/mingw53_32/lib/Qt5Multimedia.prl:
+E:/QT/5.9.1/mingw53_32/lib/Qt5AxContainer.prl:
+E:/QT/5.9.1/mingw53_32/lib/Qt5AxBase.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Widgets.prl:
+E:/QT/5.9.1/mingw53_32/lib/Qt5Multimedia.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Gui.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Sql.prl:
 E:/QT/5.9.1/mingw53_32/lib/Qt5Network.prl:
