@@ -28,6 +28,8 @@ public:
     bool autoinput;     //是否自动输入
     void input_word(QString new_word);  //输入文字
     ////////////
+    void changeStyle(QString topColor, QString bottomColor, QString borderColor, QString textColor);
+    void ChangeStyle();             //改变样式
 protected:
     void mouseReleaseEvent(QMouseEvent *e);
 private slots:
@@ -57,5 +59,6 @@ private slots:
 
 private:
     Ui::DlgMain *ui;
+    QString currentStyle;           //当前输入法面板样式
 };
 #endif // DLGMAIN_H

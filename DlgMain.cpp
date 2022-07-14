@@ -210,5 +210,5 @@ void DlgMain::on_pushButton_clicked()
 void DlgMain::on_Btn_delete_2_clicked()
 {
     emit sendData(chinese);
-    this->close();
+this->close();
 }

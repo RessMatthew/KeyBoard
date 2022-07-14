@@ -36,25 +36,30 @@ public:
     QPushButton *Btn_delete;
     QPushButton *Btn_delete_2;
     QGridLayout *gridLayout;
-    QPushButton *Btn_word1;
-    QPushButton *Btn_word2;
     QPushButton *Btn_word4;
     QPushButton *Btn_word3;
     QPushButton *Btn_word5;
     QPushButton *Btn_word6;
+    QPushButton *Btn_word1;
     QPushButton *Btn_word7;
-    QPushButton *Btn_word8;
+    QPushButton *Btn_word2;
     QPushButton *Btn_word9;
+    QPushButton *Btn_word8;
     QLabel *label;
+    QWidget *widget_title;
 
     void setupUi(QDialog *DlgMain)
     {
         if (DlgMain->objectName().isEmpty())
             DlgMain->setObjectName(QStringLiteral("DlgMain"));
-        DlgMain->resize(813, 465);
+        DlgMain->resize(816, 321);
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/image/handswriting.png"), QSize(), QIcon::Normal, QIcon::Off);
+        DlgMain->setWindowIcon(icon);
+        DlgMain->setStyleSheet(QStringLiteral(""));
         layoutWidget = new QWidget(DlgMain);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(9, 11, 297, 404));
+        layoutWidget->setGeometry(QRect(9, 11, 304, 404));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -99,31 +104,11 @@ public:
 
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        Btn_word1 = new QPushButton(layoutWidget);
-        Btn_word1->setObjectName(QStringLiteral("Btn_word1"));
+        Btn_word4 = new QPushButton(layoutWidget);
+        Btn_word4->setObjectName(QStringLiteral("Btn_word4"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(Btn_word1->sizePolicy().hasHeightForWidth());
-        Btn_word1->setSizePolicy(sizePolicy);
-        Btn_word1->setMinimumSize(QSize(90, 90));
-        Btn_word1->setMaximumSize(QSize(90, 90));
-        Btn_word1->setFont(font);
-
-        gridLayout->addWidget(Btn_word1, 0, 0, 1, 1);
-
-        Btn_word2 = new QPushButton(layoutWidget);
-        Btn_word2->setObjectName(QStringLiteral("Btn_word2"));
-        sizePolicy.setHeightForWidth(Btn_word2->sizePolicy().hasHeightForWidth());
-        Btn_word2->setSizePolicy(sizePolicy);
-        Btn_word2->setMinimumSize(QSize(90, 90));
-        Btn_word2->setMaximumSize(QSize(90, 90));
-        Btn_word2->setFont(font);
-
-        gridLayout->addWidget(Btn_word2, 0, 1, 1, 1);
-
-        Btn_word4 = new QPushButton(layoutWidget);
-        Btn_word4->setObjectName(QStringLiteral("Btn_word4"));
         sizePolicy.setHeightForWidth(Btn_word4->sizePolicy().hasHeightForWidth());
         Btn_word4->setSizePolicy(sizePolicy);
         Btn_word4->setMinimumSize(QSize(90, 90));
@@ -162,6 +147,16 @@ public:
 
         gridLayout->addWidget(Btn_word6, 1, 2, 1, 1);
 
+        Btn_word1 = new QPushButton(layoutWidget);
+        Btn_word1->setObjectName(QStringLiteral("Btn_word1"));
+        sizePolicy.setHeightForWidth(Btn_word1->sizePolicy().hasHeightForWidth());
+        Btn_word1->setSizePolicy(sizePolicy);
+        Btn_word1->setMinimumSize(QSize(90, 90));
+        Btn_word1->setMaximumSize(QSize(90, 90));
+        Btn_word1->setFont(font);
+
+        gridLayout->addWidget(Btn_word1, 0, 0, 1, 1);
+
         Btn_word7 = new QPushButton(layoutWidget);
         Btn_word7->setObjectName(QStringLiteral("Btn_word7"));
         sizePolicy.setHeightForWidth(Btn_word7->sizePolicy().hasHeightForWidth());
@@ -169,18 +164,22 @@ public:
         Btn_word7->setMinimumSize(QSize(90, 90));
         Btn_word7->setMaximumSize(QSize(90, 90));
         Btn_word7->setFont(font);
+        Btn_word7->setStyleSheet(QLatin1String("QPushButton:hover{\n"
+"background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #4D4D4D,stop:1 #292929);\n"
+"}\n"
+"QPushButton{color:#4D4D4D;}"));
 
         gridLayout->addWidget(Btn_word7, 2, 0, 1, 1);
 
-        Btn_word8 = new QPushButton(layoutWidget);
-        Btn_word8->setObjectName(QStringLiteral("Btn_word8"));
-        sizePolicy.setHeightForWidth(Btn_word8->sizePolicy().hasHeightForWidth());
-        Btn_word8->setSizePolicy(sizePolicy);
-        Btn_word8->setMinimumSize(QSize(90, 90));
-        Btn_word8->setMaximumSize(QSize(90, 90));
-        Btn_word8->setFont(font);
+        Btn_word2 = new QPushButton(layoutWidget);
+        Btn_word2->setObjectName(QStringLiteral("Btn_word2"));
+        sizePolicy.setHeightForWidth(Btn_word2->sizePolicy().hasHeightForWidth());
+        Btn_word2->setSizePolicy(sizePolicy);
+        Btn_word2->setMinimumSize(QSize(90, 90));
+        Btn_word2->setMaximumSize(QSize(90, 90));
+        Btn_word2->setFont(font);
 
-        gridLayout->addWidget(Btn_word8, 2, 1, 1, 1);
+        gridLayout->addWidget(Btn_word2, 0, 1, 1, 1);
 
         Btn_word9 = new QPushButton(layoutWidget);
         Btn_word9->setObjectName(QStringLiteral("Btn_word9"));
@@ -192,13 +191,32 @@ public:
 
         gridLayout->addWidget(Btn_word9, 2, 2, 1, 1);
 
+        Btn_word8 = new QPushButton(layoutWidget);
+        Btn_word8->setObjectName(QStringLiteral("Btn_word8"));
+        sizePolicy.setHeightForWidth(Btn_word8->sizePolicy().hasHeightForWidth());
+        Btn_word8->setSizePolicy(sizePolicy);
+        Btn_word8->setMinimumSize(QSize(90, 90));
+        Btn_word8->setMaximumSize(QSize(90, 90));
+        Btn_word8->setFont(font);
+
+        gridLayout->addWidget(Btn_word8, 2, 1, 1, 1);
+
 
         verticalLayout->addLayout(gridLayout);
 
         label = new QLabel(DlgMain);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(310, 10, 491, 400));
+        label->setGeometry(QRect(330, 10, 471, 301));
         label->setFrameShape(QFrame::Box);
+        widget_title = new QWidget(DlgMain);
+        widget_title->setObjectName(QStringLiteral("widget_title"));
+        widget_title->setGeometry(QRect(0, 0, 811, 431));
+        widget_title->setMaximumSize(QSize(811, 16777215));
+        widget_title->setStyleSheet(QLatin1String("\n"
+"background-color: rgb(47, 47, 47);"));
+        widget_title->raise();
+        layoutWidget->raise();
+        label->raise();
 
         retranslateUi(DlgMain);
 
@@ -207,19 +225,19 @@ public:
 
     void retranslateUi(QDialog *DlgMain)
     {
-        DlgMain->setWindowTitle(QApplication::translate("DlgMain", "DlgMain", Q_NULLPTR));
+        DlgMain->setWindowTitle(QApplication::translate("DlgMain", "\346\211\213\345\206\231\346\235\277", Q_NULLPTR));
         Btn_clear->setText(QApplication::translate("DlgMain", "\351\207\215\345\206\231", Q_NULLPTR));
         Btn_delete->setText(QApplication::translate("DlgMain", "\345\210\240\351\231\244", Q_NULLPTR));
         Btn_delete_2->setText(QApplication::translate("DlgMain", "\347\241\256\345\256\232", Q_NULLPTR));
-        Btn_word1->setText(QString());
-        Btn_word2->setText(QString());
         Btn_word4->setText(QString());
         Btn_word3->setText(QString());
         Btn_word5->setText(QString());
         Btn_word6->setText(QString());
+        Btn_word1->setText(QString());
         Btn_word7->setText(QString());
-        Btn_word8->setText(QString());
+        Btn_word2->setText(QString());
         Btn_word9->setText(QString());
+        Btn_word8->setText(QString());
         label->setText(QString());
     } // retranslateUi
 

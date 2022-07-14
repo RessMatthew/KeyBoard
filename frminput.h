@@ -79,8 +79,6 @@ private slots://槽
     void receiveData(QString data);
     void on_pushHand_clicked();
 
-
-
 private:
     Ui::frmInput *ui;
     static frmInput *_instance;     //实例对象

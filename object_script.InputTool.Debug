@@ -10,6 +10,7 @@ INPUT(
 ./temp\obj\http.o
 ./temp\obj\DlgMain.o
 ./temp\obj\handsinput.o
+./temp\obj\qrc_img.o
 ./temp\obj\moc_frmmain.o
 ./temp\obj\moc_frminput.o
 ./temp\obj\moc_frmnum.o

@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2014-08-15T14:34:50
+# Project created by QtCreator 2022-07-13T14:34:50
 #
 #-------------------------------------------------
 
@@ -51,3 +51,6 @@ RCC_DIR         = temp/rcc
 UI_DIR          = temp/ui
 OBJECTS_DIR     = temp/obj
 DESTDIR         = bin
+
+RESOURCES += \
+    img.qrc
